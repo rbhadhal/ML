@@ -12115,6 +12115,8 @@ Standard deviation of prices: $165171.13154429477
 <p><strong>Answer:</strong></p>
 <p>The model has successfully captured the variation of the target variable as score close to 1 indicates that the variable can be predicted from the independent variable.</p>
 <p>The score achieved is 0.923 which is high and shows that 92.3% of the variance is predicted.</p>
+<p>R^2 is a measure of good fit i.e. how close the linear model is to the observed data. It measures how much the model explains the variablity of the data from the mean, when there is a high value then all of the data variablility from mean is captured in the model and when it is a low value then the model can not explain hte variablity of the observations around its mean. The more of the variance the model captures the closer the data points are to the prediction and the higher the R^2 value.</p>
+<p>The limitations are that the R^2 can not determine if the predication are biased and it can be the case that a high R^2 value is available for a model that is still bad.</p>
 
 </div>
 </div>
@@ -12200,6 +12202,8 @@ Standard deviation of prices: $165171.13154429477
 </ul>
 <p>However there are many other factors to consider:</p>
 <p>How representative is the training set of the data that would use in a real world application. For example 80/20 split is fine but if that is still a very small subset of the real world data for example based on only one particular day but the model will be used everyday of the year and the other days are likely to have different characteristics because of seasons as an example. Thus its important that the test and training data is REPRESENTATIVE of your real world data set.</p>
+<p>If the train data used some the test data and the training score was high then the test score would also be high as that was used as an input and would provide false confidence in the accuracy of the model and it would be biased towards being overfit.</p>
+<p>If the training score was poor and the test data was used to train then the test score will still be poor and thus underfit.</p>
 
 </div>
 </div>
